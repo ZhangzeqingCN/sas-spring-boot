@@ -1,0 +1,43 @@
+server:
+  port: 8080
+  address: 0.0.0.0
+
+spring:
+  profiles:
+    active: dev
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  servlet:
+    multipart:
+      max-file-size: 10MB
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+
+ai:
+  ocr:
+    deviceType: cpu
+  yolo:
+    deviceType: cpu
+  face:
+    deviceType: cpu
+
+logging:
+  level:
+    com:
+      fly: debug
+
+
+interceptor: false
+
+knife4j:
+  enable: true
+  setting:
+    enable-footer: true
+
