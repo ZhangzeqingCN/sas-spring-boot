@@ -4,7 +4,9 @@ import com.example.template.dao.enums.Gender;
 import com.example.template.dao.enums.UserType;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.v3.oas.annotations.media.Schema;
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
@@ -56,7 +58,7 @@ public class User {
     @Schema(defaultValue = testAddress, minLength = 10, maxLength = 128)
     String address;
 
-//    public static final String testToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRoZW50aWNhdGlvbiIsInQtdXNlcm5hbWUiOiJaWlEiLCJpc3MiOiJpc3N1ZXIiLCJleHAiOjM4MzQwNjU1NDYsImlhdCI6MTY4NjU4MTg5OX0.YlalGUUUR1bnz4u1ZRA_l8NCqOgXCV17P3sTuGCYoN8";
+    //    public static final String testToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRoZW50aWNhdGlvbiIsInQtdXNlcm5hbWUiOiJaWlEiLCJpc3MiOiJpc3N1ZXIiLCJleHAiOjM4MzQwNjU1NDYsImlhdCI6MTY4NjU4MTg5OX0.YlalGUUUR1bnz4u1ZRA_l8NCqOgXCV17P3sTuGCYoN8";
     public static final String testToken = "eyJ...YoN8";
     String token;
 

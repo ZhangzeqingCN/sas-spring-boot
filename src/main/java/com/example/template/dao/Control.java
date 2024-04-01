@@ -7,6 +7,9 @@ import lombok.*;
 
 import java.sql.Timestamp;
 
+/**
+ * @apiNote 用于记录用户针对设备的操作
+ */
 @SuppressWarnings("JpaDataSourceORMInspection")
 @Builder
 @Setter
@@ -15,7 +18,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @ToString
 @Entity
-public class Operation {
+public class Control {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Schema(defaultValue = "1")

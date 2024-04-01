@@ -27,4 +27,7 @@ public class ReceivedSignalStrengthIndicator {
     AP ap;
 
     Timestamp receivedTime;
+
+    @OneToOne
+    Device device;
 }
